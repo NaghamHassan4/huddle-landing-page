@@ -13,7 +13,7 @@ This is a responsive landing page for Huddle, built with HTML and SCSS.
 - FontAwesome (for icons)
 
 ## Requirements
-To sún this project, ensure you have the following installed on your system:
+To run this project, ensure you have the following installed on your system:
 
 - A modern web browser (e.g., Chrome, Firefox, Edge).
 - Node.js (optional, for SASS compilation).
