@@ -1,0 +1,22 @@
+@mixin createLayout ($noOfCols, $screenName, $breakPoint) {
+    @media (min-width: $breakPoint) {
+        @if $screenName=="" {
+            @for $i from 1 through $noOfCols {
+                .col-#{$i} {
+                    width: ($i/$noOfCols)*100%;
+                }
+            }
+        }
+        @else {
+            @for $i from 1 through $noOfCols {
+                .col-#{$screenName}-#{$i} {
+                    width: ($i/$noOfCols)*100%;
+                }
+            }
+        }
+    }
+}
+// @include createLayout(12, "sm", 576px);
+// @include createLayout(12, "md", 768px);
+// @include createLayout(12, "lg", 992px);
+@include createLayout(12, "", 992px);

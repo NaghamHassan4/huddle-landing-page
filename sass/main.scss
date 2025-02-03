@@ -1,0 +1,231 @@
+@use 'layout/_grid.scss' as *;
+@use 'abstracts/_colors.scss' as *;
+@use 'abstracts/_mixins.scss' as *;
+@use 'components/_buttons.scss' as *;
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Poppins", serif;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+}
+.hero{
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 1200px;
+}
+.logodiv{
+    margin: 60px 80px;
+    width: 220px;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    flex-direction: column;
+}
+.mockup{
+    margin: 10px -815px;
+    width: 720px;
+}
+.p1{
+    @include headingFont;
+    font-weight: 600px;
+    margin: 110px 90px;
+    font-size: 42px;
+    width: 500px;
+}
+.p2{
+    @include bodyFont;
+    font-weight: 600px;
+    margin: -75px 82px;
+    font-size: 19px;
+    width: 600px;
+}
+.container1{  
+    display: flex;    
+    margin: auto;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card{
+    @include cards;
+    margin: -850px 20px;
+}
+.p3{
+    @include headingFont;
+    margin: 180px 140px;
+    font-size: 32px;
+    width: 500px;
+}
+.p4{
+    @include bodyFont;
+    margin: -180px 140px;
+    font-size: 18px;
+    width: 500px;
+}
+.growtogether{
+    margin: 60px 50px;
+    width: 450px;
+}
+
+.card2{
+    @include cards;
+    margin: 300px 20px;
+}
+.flowing{
+    margin: 60px 120px;
+    width: 450px;
+    
+}
+.p5 {
+    @include headingFont;
+    margin: 160px 50px; 
+    font-size: 32px;
+    width: 500px;
+}
+
+.p6 {
+    @include bodyFont;
+    margin: -140px 50px; 
+    font-size: 18px;
+    width: 500px;
+}
+
+.card3{
+    @include cards;
+    margin: -850px 20px;
+}
+.p7{
+    @include headingFont;
+    margin: 180px 140px;
+    font-size: 32px;
+    width: 500px;
+}
+.p8{
+    @include bodyFont;
+    margin: -180px 140px;
+    font-size: 18px;
+    width: 500px;
+}
+.users{
+    margin: 60px 50px;
+    width: 450px;
+}
+
+.float{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 300px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 400px;
+    .p10{
+        @include headingFont;
+
+        font-size: 36px;
+        
+    }
+    .btn2{
+        @include bodyFont;
+        color: white;
+        font-size: 18px;
+        width: 420px;
+        height: 70px;
+        border-radius: 50px;
+        margin: 0;
+        margin-left:70px;
+    }
+}
+
+.footer {
+    .heading {
+        width: 90%;
+        margin: 100px;
+      }
+    position: relative;
+    background-color: $Very-Dark-Cyan;
+    color: #fefefe;
+    width: 100%;
+    height: 750px;
+    left: 0;
+    p{
+        @include bodyFont;
+        font-size: 18px;
+        color: white;
+    }
+    
+  
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin: -100px 100px;
+      .first{
+        margin-top: 35px;
+      }
+
+      .contact {
+        display: flex; 
+        align-items: center; 
+        gap: 10px; 
+        margin-bottom: 50px; 
+        img {
+          width: 20px; 
+          height: 20px;
+        }
+        p {
+            margin: 0; 
+        }
+      }
+      .second,.third{
+        margin-top: 30px;
+        margin-left: -200px;
+      }
+      .fourth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 200px;
+        margin-right: 110px;
+      }
+      
+      .fourth i {
+        font-size: 15px;
+        color: white;
+        border: 2px solid white; 
+        border-radius: 50%; 
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  footer {
+    @include bodyFont;
+    color: white;
+    text-align: end;
+    margin: 60px;  
+    
+  }
+  .fooerlogo{
+    color: #ffffff;
+}
+  

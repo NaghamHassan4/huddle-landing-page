@@ -1,0 +1,28 @@
+@use '../abstracts/_mixins.scss' as *;
+@use '../abstracts/_colors.scss' as *;
+
+.btn{
+    @include headingFont;
+    background-color: white;
+    width: 210px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 50px 80px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn2{
+    @include headingFont;
+    background-color: $Pink;
+    color: white;
+    width: 300px;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 120px 80px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+}
